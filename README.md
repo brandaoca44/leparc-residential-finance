@@ -20,7 +20,6 @@ O sistema permite cadastrar moradores, registrar receitas e despesas, aplicar re
 # Índice
 
 - Sobre
-- Demonstração
 - Funcionalidades
 - Regras de Negócio
 - Tecnologias
@@ -53,48 +52,6 @@ A solução é composta por:
 - Documentação Swagger
 - Testes Unitários
 - Arquitetura em camadas
-
----
-
-# Demonstração
-
-## Dashboard
-
-> Adicione aqui um print da tela.
-
----
-
-## Pessoas
-
-> Adicione aqui um print da listagem.
-
----
-
-## Cadastro de Pessoas
-
-> Adicione aqui um print.
-
----
-
-## Transações
-
-> Adicione aqui um print.
-
----
-
-## Swagger
-
-> Adicione aqui um print da documentação.
-
----
-
-# Funcionalidades
-
-## Pessoas
-
-- Cadastro
-- Listagem
-- Exclusão
 
 ---
 
