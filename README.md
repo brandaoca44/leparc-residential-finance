@@ -191,7 +191,7 @@ Antes de executar o projeto, instale:
 Clone o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/LeParc.ResidentialFinance.git
+git clone https://github.com/SEU-USUARIO/leparc-residential-finance.git
 ```
 
 Entre na pasta
