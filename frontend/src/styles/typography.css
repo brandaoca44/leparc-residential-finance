@@ -1,0 +1,43 @@
+/**
+ * Define padrões tipográficos reutilizáveis.
+ *
+ * As classes deste arquivo devem ser utilizadas quando um elemento textual
+ * precisar manter consistência visual entre diferentes páginas.
+ */
+.page-title {
+  color: var(--color-text-primary);
+  font-size: clamp(var(--font-size-xl), 3vw, var(--font-size-2xl));
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.03em;
+}
+
+.page-description {
+  max-width: 45rem;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
+}
+
+.section-title {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-income {
+  color: var(--color-income);
+}
+
+.text-expense {
+  color: var(--color-expense);
+}

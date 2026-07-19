@@ -1,0 +1,79 @@
+@import "./variables.css";
+@import "./reset.css";
+@import "./typography.css";
+
+/**
+ * Define os estilos globais compartilhados por toda a aplicação.
+ *
+ * Estilos específicos de páginas e componentes devem permanecer nos respectivos
+ * arquivos CSS Modules para evitar acoplamento e conflitos de escopo.
+ */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
+
+::selection {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+button:not(:disabled),
+a {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+input,
+select,
+textarea {
+  color: var(--color-text-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(15, 76, 92, 0.22);
+  outline-offset: 2px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

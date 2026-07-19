@@ -1,0 +1,405 @@
+.page {
+  width: 100%;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.headerContent {
+  min-width: 0;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.description {
+  max-width: 42rem;
+  margin: 0.75rem 0 0;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.createButton,
+.emptyAction,
+.retryButton {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius-md);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font: inherit;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.createButton {
+  flex-shrink: 0;
+}
+
+.createButton:hover,
+.emptyAction:hover,
+.retryButton:hover:not(:disabled) {
+  border-color: var(--color-primary-hover);
+  background: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.createButton:focus-visible,
+.emptyAction:focus-visible,
+.retryButton:focus-visible,
+.deleteButton:focus-visible {
+  outline: 3px solid
+    color-mix(
+      in srgb,
+      var(--color-primary) 25%,
+      transparent
+    );
+  outline-offset: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  min-width: 0;
+  min-height: 17rem;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.card:hover {
+  border-color: color-mix(
+    in srgb,
+    var(--color-primary) 35%,
+    var(--color-border)
+  );
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.avatar {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: color-mix(
+    in srgb,
+    var(--color-primary) 12%,
+    var(--color-surface)
+  );
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.personInfo {
+  min-width: 0;
+}
+
+.personName {
+  overflow: hidden;
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 1.0625rem;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.personId {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--color-text-secondary);
+  font-size: 0.8125rem;
+}
+
+.details {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.detailItem {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.detailLabel {
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.detailValue {
+  color: var(--color-text-primary);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--color-border);
+  background: color-mix(
+    in srgb,
+    var(--color-background) 45%,
+    var(--color-surface)
+  );
+}
+
+.deleteButton {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid var(--color-danger);
+  border-radius: var(--border-radius-md);
+  background: transparent;
+  color: var(--color-danger);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.deleteButton:hover:not(:disabled) {
+  background: var(--color-danger);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+.deleteButton:disabled,
+.retryButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.emptyState,
+.feedbackCard {
+  display: flex;
+  min-height: 22rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  background: var(--color-surface);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.emptyIcon {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  background: color-mix(
+    in srgb,
+    var(--color-primary) 12%,
+    var(--color-surface)
+  );
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.emptyTitle,
+.feedbackTitle {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+}
+
+.emptyText,
+.feedbackText {
+  max-width: 30rem;
+  margin: 0.75rem 0 1.5rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.skeletonCard {
+  pointer-events: none;
+}
+
+.skeletonTitle,
+.skeletonLine,
+.skeletonLineShort,
+.skeletonButton {
+  border-radius: var(--border-radius-md);
+  background: linear-gradient(
+    90deg,
+    var(--color-background) 25%,
+    var(--color-border) 50%,
+    var(--color-background) 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.4s infinite;
+}
+
+.skeletonTitle {
+  width: 65%;
+  height: 1.25rem;
+  margin: 1.5rem 1.5rem 1rem;
+}
+
+.skeletonLine {
+  width: calc(100% - 3rem);
+  height: 0.875rem;
+  margin: 0 1.5rem 0.75rem;
+}
+
+.skeletonLineShort {
+  width: 45%;
+  height: 0.875rem;
+  margin: 0 1.5rem;
+}
+
+.skeletonButton {
+  width: 7rem;
+  height: 2.5rem;
+  margin: auto 1.5rem 1.5rem auto;
+}
+
+@keyframes loading {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .pageHeader {
+    align-items: stretch;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .createButton {
+    width: 100%;
+    min-height: 3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .cardHeader,
+  .details {
+    padding: 1.25rem;
+  }
+
+  .cardFooter {
+    padding: 1rem 1.25rem;
+  }
+
+  .deleteButton {
+    width: 100%;
+    min-height: 3rem;
+  }
+
+  .emptyState,
+  .feedbackCard {
+    min-height: 20rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .createButton,
+  .emptyAction,
+  .retryButton,
+  .deleteButton {
+    transition: none;
+  }
+
+  .skeletonTitle,
+  .skeletonLine,
+  .skeletonLineShort,
+  .skeletonButton {
+    animation: none;
+  }
+}

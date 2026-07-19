@@ -1,0 +1,6 @@
+@LeParc.ResidentialFinance.Api_HostAddress = http://localhost:5234
+
+GET {{LeParc.ResidentialFinance.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
