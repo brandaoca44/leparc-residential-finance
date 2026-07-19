@@ -96,6 +96,7 @@ Resumo financeiro contendo:
 ## Backend
 
 - ASP.NET Core 8
+- C#
 - Entity Framework Core
 - SQLite
 - Swagger
