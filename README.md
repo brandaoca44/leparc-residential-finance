@@ -47,7 +47,7 @@ O objetivo do projeto é fornecer uma aplicação completa para gerenciamento fi
 
 A solução é composta por:
 
-- Backend REST em ASP.NET Core com C#
+- Backend REST em ASP.NET com C#
 - Frontend SPA em React com Typescript
 - Persistência utilizando SQLite
 - Documentação Swagger
