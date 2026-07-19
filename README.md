@@ -197,7 +197,7 @@ git clone https://github.com/SEU-USUARIO/leparc-residential-finance.git
 Entre na pasta
 
 ```bash
-cd LeParc.ResidentialFinance
+cd leparc-residential-finance
 ```
 
 ---
