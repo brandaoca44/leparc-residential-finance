@@ -11,7 +11,7 @@
 
 </p>
 
-Sistema de gestão financeira residencial desenvolvido como desafio técnico utilizando **ASP.NET Core 8**, **React**, **TypeScript** e **SQLite**.
+Sistema de gestão financeira residencial desenvolvido como desafio técnico utilizando **ASP.NET Core 8, C#**, **React**, **TypeScript** e **SQLite**.
 
 O sistema permite cadastrar moradores, registrar receitas e despesas, aplicar regras de negócio e visualizar um resumo financeiro consolidado.
 
